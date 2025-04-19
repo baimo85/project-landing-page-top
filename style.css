@@ -51,7 +51,7 @@ nav {
 
 .right-nav a {
     text-decoration: none;
-    color: #F9FAF8;
+    color: #e5e7eb;
     font-size: 18px;
 }
 
@@ -78,8 +78,8 @@ main > section {
     justify-content: space-between;
     height: auto;
     background-color: #1F2937;
-    padding: 80px;
-    gap: 50px;
+    padding: 150px;
+    gap: 40px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -196,11 +196,18 @@ main > section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 40px;
     border-radius: 8px;
     width: 100%;
     text-align: center;
     margin: 0 auto;
+    max-width: 800px;
+}
+
+.section-three p, 
+h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .section-four {
