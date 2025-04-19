@@ -95,7 +95,6 @@ main > section {
     align-self: start;
 }
 
-.section  
 .section-one-right {
     flex: 1;
 }
@@ -232,31 +231,30 @@ h4 {
 }
 
 .section-four .content-box button {
-    background-color: #3882f6; /* Mismo color que el fondo */
-    color: #F9FAF8; /* Mismo color que el texto */
-    border: 2px solid #F9FAF8; /* Borde del mismo color que el texto */
+    background-color: #3882f6; 
+    color: #F9FAF8; 
+    border: 2px solid #F9FAF8; 
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 25px; /* Bordes redondeados */
+    border-radius: 25px; 
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .section-four .content-box button:hover {
-    background-color: #F9FAF8; /* Fondo cambia al color del texto */
-    color: #3882f6; /* Texto cambia al color del fondo */
-    border-color: #3882f6; /* Borde cambia al color del fondo */
+    background-color: #F9FAF8; 
+    color: #3882f6; 
+    border-color: #3882f6; 
 }
 
 footer {
     display: flex;
-    justify-content: center; /* Centra el texto horizontalmente */
-    align-items: center; /* Centra el texto verticalmente */
-    background-color: #1F2937; /* Fondo oscuro */
-    color: #F9FAF8; /* Texto blanco */
-    padding: 40px; /* Mismo padding que el header */
-    width: 100%; /* Asegura que no exceda el ancho del viewport */
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
-    text-align: center; /* Centra el texto */
+    justify-content: center; 
+    align-items: center; 
+    background-color: #1F2937; 
+    color: #F9FAF8; 
+    padding: 40px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    text-align: center; 
 }
-
