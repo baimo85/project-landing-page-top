@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 body {
@@ -9,13 +10,14 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
+    overflow-x: hidden;
 }
 
 header,
 footer {
     background-color: #1F2937;
     color: #F9FAF8;
-    flex: 0 0 10%
+    flex: 0;
 }
 
 .section-three {
@@ -32,6 +34,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 40px;
 }
 
 .left-nav {
@@ -60,51 +63,78 @@ main {
 
 main > section {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
 }
 
 .section-one {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
+    height: auto;
     background-color: #1F2937;
+    padding: 80px;
+    gap: 50px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .section-one button {
     background-color: #3B82F6;
     color: #F9FAF8;
     border: none;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 8px 16px;
+    font-size: 14px;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 25px;
+    align-self: start;
 }
 
-.section-one-left,
+.section  
 .section-one-right {
     flex: 1;
 }
 
 .section-one-left {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
     color: #F9FAF8;
+    text-align: left;
 }
 
 .section-one-left h2 {
     font-size: 48px;
+    margin-bottom: 10px;
 }
 
 .section-one-left p {
     font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.section-one-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-one-right img {
     width: 100%;
+    max-width: 600px;
+    aspect-ratio: 4 / 3;
+    border-radius: 15px;
     height: auto;
     object-fit: cover;
+    height: auto;
 }
 
 .section-two-noticias {
@@ -112,7 +142,7 @@ main > section {
     flex-wrap: nowrap;
     justify-content: space-between;
     gap: 20px;
-    padding: 20px;
+    padding: 60px;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -141,10 +171,85 @@ main > section {
 }
 
 .section-two h2 {
-    text-align: center
+    text-align: center;
+    font-size: 36px;
+    padding-top: 16px;
 }
 
 .section-two h3 {
     padding-top: 10px;
 
 }
+
+.section-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.section-three .content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.section-four .content-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #3882f6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #F9FAF8;
+}
+
+.section-four .content-box button {
+    background-color: #3882f6; /* Mismo color que el fondo */
+    color: #F9FAF8; /* Mismo color que el texto */
+    border: 2px solid #F9FAF8; /* Borde del mismo color que el texto */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.section-four .content-box button:hover {
+    background-color: #F9FAF8; /* Fondo cambia al color del texto */
+    color: #3882f6; /* Texto cambia al color del fondo */
+    border-color: #3882f6; /* Borde cambia al color del fondo */
+}
+
+footer {
+    display: flex;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    background-color: #1F2937; /* Fondo oscuro */
+    color: #F9FAF8; /* Texto blanco */
+    padding: 40px; /* Mismo padding que el header */
+    width: 100%; /* Asegura que no exceda el ancho del viewport */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    text-align: center; /* Centra el texto */
+}
+
